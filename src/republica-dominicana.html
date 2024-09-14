@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>República Dominicana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="font-poppins bg-black text-gray-300">
+    <header
+        class="max-w-[90%] mx-auto grid grid-cols-[50px_1fr_50px] grid-rows-[50px] justify-center items-center relative z-10">
+        <div class="font-bold">Atlas</div>
+        <ul class="flex justify-center gap-5 font-medium">
+            <a href="index.html" class="no-underline text-gray-300 rounded-md px-2 py-1 hover:bg-gray-700">Home</a>
+            <a href="sobre.html" class="no-underline text-gray-300 rounded-md px-2 py-1 hover:bg-gray-700">Sobre</a>
+            <a href="sobre.html" class="no-underline text-gray-300 rounded-md px-2 py-1 hover:bg-gray-700">Pontos
+                Turísticos</a>
+            <a href="food.html"
+                class="no-underline text-gray-300 rounded-md px-2 py-1 hover:bg-gray-700">Gastronomia</a>
+        </ul>
+    </header>
+    <div class="relative h-screen -mt-[50px]">
+        <div class="absolute inset-0">
+            <div class="relative w-full h-full overflow-hidden opacity-1 transition-opacity duration-500 item active">
+                <!-- Camada de gradiente -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <img src="assets/img/republica_dominicana/punta-cana.jpg" class="object-cover w-full h-full">
+                <div class="absolute left-40 top-[20%] w-[500px] max-w-[80%] z-10">
+                    <h2 class="text-[100px] m-0">Punta Cana</h2>
+                    <p class="text-[16px] font-bold">Punta Cana, região que corresponde ao extremo leste da República Dominicana, é banhada pelo Mar do Caribe e pelo Oceano Atlântico. A região é conhecida pelo seu trecho de 32 quilômetros de praias e águas límpidas. A área de Bávaro e Punta Cana combinam-se para formar o que é conhecido como La Costa.</p>
+                </div>
+            </div>
+            <div class="absolute inset-0 opacity-0 transition-opacity duration-500 item">
+                <!-- Camada de gradiente -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <img src="assets/img/republica_dominicana/santo-domingo.jpg" class="object-cover w-full h-full">
+                <div class="absolute left-40 top-[20%] w-[500px] max-w-[80%] z-10">
+                    <h2 class="text-[100px] m-0">Santo Domingo</h2>
+                    <p class="text-[16px] font-bold">A cidade foi nomeada Santo Domingo por Bartolomeu Colombo, irmão de Cristóvão Colombo e fundador do assentamento, o qual, segundo Oviedo e frei Bartolomeu de las Casas, teria sido criado no dia de São Domingos de Gusmão.</p>
+                </div>
+            </div>
+            <div class="absolute inset-0 opacity-0 transition-opacity duration-500 item">
+                <!-- Camada de gradiente -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <img src="assets/img/republica_dominicana/altos-de-chavon.jpg" class="object-cover w-full h-full">
+                <div class="absolute left-40 top-[20%] w-[500px] max-w-[80%] z-10">
+                    <h2 class="text-[100px] m-0">Altos de Chavon</h2>
+                    <p class="text-[16px] font-bold">O projeto para construção da vila começou em 1976 e durou até 1982. Seus idealizadores foram o arquiteto italiano Roberto Copa e o industrialista Charles Bluhdom. A ideia foi recriar uma aldeia europeia em estilo mediterrâneo do século XVI.</p>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Botões de navegação -->
+        <div class="absolute top-[30%] right-[50px] z-20">
+            <button id="prev"
+                class="bg-gray-500 bg-opacity-30 text-gray-300 w-10 h-10 rounded-full hover:bg-gray-300 hover:text-black transition">←</button>
+            <button id="next"
+                class="bg-gray-500 bg-opacity-30 text-gray-300 w-10 h-10 rounded-full hover:bg-gray-300 hover:text-black transition">→</button>
+        </div>
+
+        <!-- Miniaturas -->
+        <div class="absolute bottom-[50px] w-full px-[50px] flex gap-4 overflow-auto justify-end">
+            <div class="w-[150px] h-[220px] flex-shrink-0 relative rounded-md thumbnail active" data-index="0">
+                <img src="assets/img/republica_dominicana/punta-cana.jpg" class="w-full h-full object-cover rounded-md">
+                <div
+                    class="absolute inset-x-0 bottom-0 p-2 text-white bg-gradient-to-t from-black via-transparent to-transparent rounded-md">
+                    Punta Cana
+                </div>
+            </div>
+            <div class="w-[150px] h-[220px] flex-shrink-0 relative rounded-md thumbnail" data-index="1">
+                <img src="assets/img/republica_dominicana/santo-domingo.jpg"
+                    class="w-full h-full object-cover rounded-md">
+                <div
+                    class="absolute inset-x-0 bottom-0 p-2 text-white bg-gradient-to-t from-black via-transparent to-transparent rounded-md">
+                    Santo Domingo
+                </div>
+            </div>
+            <div class="w-[150px] h-[220px] flex-shrink-0 relative rounded-md thumbnail" data-index="2">
+                <img src="assets/img/republica_dominicana/altos-de-chavon.jpg"
+                    class="w-full h-full object-cover rounded-md">
+                <div
+                    class="absolute inset-x-0 bottom-0 p-2 text-white bg-gradient-to-t from-black via-transparent to-transparent rounded-md">
+                    Altos de Chavon
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50"></body>
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold">Atlas</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:underline text-lg">Home</a></li>
+                    <li><a href="#countries" class="hover:underline text-lg">Países</a></li>
+                    <li><a href="#about" class="hover:underline text-lg">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-80" style="background-image: url('img/ata.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h2 class="text-3xl md:text-5xl font-bold">Explore o Mundo de Onde Você Estiver</h2>
+                <p class="mt-4 text-lg">Uma jornada pelos países mais incríveis do planeta.</p>
+                <a href="#countries" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg font-medium">Comece a Explorar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-12 px-4 md:px-0">
+        <section id="intro" class="text-center">
+            <h2 class="text-2xl font-semibold text-gray-700">Conheça Diversos Países ao Redor do Mundo</h2>
+            <p class="mt-4 text-gray-600">Descubra as maravilhas culturais, naturais e tecnológicas que cada país tem a oferecer.</p>
+        </section>
+
+        <!-- Seção dos Países -->
+        <section id="countries" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- República Dominicana -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="assets/img/republica_dominicana/republica-dominicana.png" alt="flag Republica Dominicana" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800"><a href="republica-dominicana.html">Republica Dominicana</a></h3>
+                    <p class="text-gray-600">Conhecido por suas praias deslumbrantes e pelo seus resorts, a Republica Dominicana é um dos países da America Central.</p>
+                </div>
+            </div>
+
+            <!-- Japan -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="img/arg.png" alt="Japão" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Argentina</h3>
+                    <p class="text-gray-600">A Argentina é um países localizado na America do Sul, O país é conhecido também por sua dança e sua música, o tango.</p>
+                </div>
+            </div>
+
+            <!-- France -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="img/uru.png" alt="Uruguai" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Uruguai</h3>
+                    <p class="text-gray-600">O Uruguai é um país da América do Sul conhecido pelo interior verdejante e pelo litoral repleto de praias.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Atlas. Todos os direitos reservados.</p>
+            <p><a href="#" class="hover:underline">Política de Privacidade</a> | <a href="#" class="hover:underline">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.bundle.min.js"></script>
+</html>
